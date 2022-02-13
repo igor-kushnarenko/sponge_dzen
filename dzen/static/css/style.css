@@ -1,0 +1,60 @@
+body {
+    background: #0C1821;
+    color: #CCC9DC;
+    font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */
+    font-size: 100%; /* Размер шрифта в процентах */
+}
+
+.line_block {
+        width:300px;
+        height:70px;
+        background:#323140;
+        float:left;
+        margin: 0 5px 5px 0;
+        text-align:center;
+        padding: 20px;
+}
+
+.line_block_yellow {
+        width:300px;
+        height:30px;
+        background:#323131;
+        float:left;
+        margin: 0 5px 5px 0;
+        text-align:center;
+        padding: 20px;
+}
+
+.line_block_without_background {
+        width:300px;
+        height:5px;
+        float:left;
+        margin: 0 10px 10px 0;
+        text-align:center;
+        padding: 20px;
+}
+
+.content {
+width:1400px;
+margin:0 auto;
+}
+
+.nav {
+width:1400px;
+margin:0 auto;
+}
+
+hr {
+border: none; /* Убираем границу для браузера Firefox */
+color: white; /* Цвет линии для остальных браузеров */
+background-color: white; /* Цвет линии для браузера Firefox и Opera */
+height: 1px; /* Толщина линии */
+}
+
+a:link {
+    color: white;
+}
+
+a:visited{
+color: white;
+}
