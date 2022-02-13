@@ -2,4 +2,11 @@
 {% block title %}{{ title }}{% endblock %}
 {% block content %}
 <h1>{{ title }}</h1>
+<h2>lenta.ru</h2>
+{% for news in lenta %}
+<p>
+    {{ news.time }}
+    <a href="{{ news.href }}">{{ news.title }}</a>
+</p>
+{% endfor %}
 {% endblock %}
