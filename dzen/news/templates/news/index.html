@@ -2,8 +2,11 @@
 {% block title %}{{ title }}{% endblock %}
 {% block content %}
 <div class="container">
-    <h1>{{ title }}</h1>
-    <div class="row">
+    <h1>{{ title }}: {{ date }}</h1>
+    <h3>{{ weather }}</h3>
+    <hr>
+    <h1>Новости</h1>
+    <div class="row text">
         <div class="col">
             <h2>lenta.ru</h2>
             {% for news in lenta %}
@@ -18,6 +21,15 @@
             {% for news in tjournal %}
             <p>
             {{ news.time }}
+            <a href="{{ news.href }}">{{ news.title }}</a>
+            </p>
+            {% endfor %}
+        </div>
+                <div class="col">
+            <h2>Погода на 10 дней</h2>
+            {% for w in weather_week %}
+            <p>
+            {{ w.weekday }}, {{ w.date }}: от {{ w.temperature.min }}, до {{ w.temperature.max }}, {{ w.clouds }}
             <a href="{{ news.href }}">{{ news.title }}</a>
             </p>
             {% endfor %}

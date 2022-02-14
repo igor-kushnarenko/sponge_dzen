@@ -5,6 +5,11 @@ body {
     font-size: 100%; /* Размер шрифта в процентах */
 }
 
+.text {
+    font-family: monospace, Geneva, Arial, Helvetica, sans-serif; /* Гарнитура текста */
+    font-size: 90%; /* Размер шрифта в процентах */
+}
+
 .line_block {
         width:300px;
         height:70px;
@@ -53,6 +58,7 @@ height: 1px; /* Толщина линии */
 
 a:link {
     color: white;
+    text-decoration: none;
 }
 
 a:visited{
